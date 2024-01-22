@@ -1,8 +1,13 @@
 const Song = ({ songTitle, artistName, year }) => {
     return (
         <>
-            <a href="#">Song Name: {songTitle}</a>
-            <a href="#">Sung By: {artistName}</a>
+            <a href="#" style={{
+                color: "black"
+            }}>Song Name: {songTitle}</a>
+            <br></br>
+            <a href="#" style={{
+                color: "black"
+            }}>Sung By: {artistName}</a>
             <p>Year: {year}</p>
         </>
     )
