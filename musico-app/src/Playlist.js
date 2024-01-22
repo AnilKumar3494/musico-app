@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Song from './Song'
 import Podcast from './Podcast';
 
@@ -8,9 +8,21 @@ export default function Playlist() {
 
     //Songs Data and info
     const songData = [
-        { songTitle: "My Way", artistName: "Frank Sinatra", year: 2022 },
-        { songTitle: "Just the way you are", artistName: "Burno Mars", year: 2023 },
-        { songTitle: "Perfect", artistName: "Ed Sheeran", year: 2023 },
+        {
+            songTitle: "My Way", artistName: "Frank Sinatra", year: 2022,
+            songLink: "https://www.youtube.com/watch?v=qQzdAsjWGPg&pp=ygUFbXl3YXk%3D",
+            artistLink: "https://en.wikipedia.org/wiki/Frank_Sinatra"
+        },
+        {
+            songTitle: "Just the way you are", artistName: "Burno Mars", year: 2023,
+            songLink: "https://www.youtube.com/watch?v=LjhCEhWiKXk&pp=ygUUanVzdCB0aGUgd2F5IHlvdSBhcmU%3D",
+            artistLink: "https://en.wikipedia.org/wiki/Bruno_Mars"
+        },
+        {
+            songTitle: "Perfect", artistName: "Ed Sheeran", year: 2023,
+            songLink: "https://www.youtube.com/watch?v=2Vv-BfVoq4g&pp=ygUTcGVyZmVjdCBlZCBzaGVlcmFuIA%3D%3D",
+            artistLink: "https://en.wikipedia.org/wiki/Ed_Sheeran"
+        },
     ]
 
     //Podcasts Data and info
@@ -23,7 +35,7 @@ export default function Playlist() {
     ]
     return (
         <>
-            <h1>Playlist</h1>
+            <h1>Songs & Podcasts</h1>
             <div>
                 <h2>Shuffled Songs Playlist for you</h2>
                 {songData.map((song, index) => (
@@ -81,7 +93,7 @@ export default function Playlist() {
 //     return shuffledArray;
 // };
 
-{/* <>
+/* <>
 <h1>Playlist</h1>
 <div>
     <h2>Shuffled Playlist for you</h2>
@@ -97,4 +109,4 @@ export default function Playlist() {
         </div>
     ))}
 </div>
-</> */}
+</> */
