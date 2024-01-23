@@ -7,7 +7,7 @@ const Podcast = ({ season, episodeNumber, episodeName }) => {
             <p style={{
                 margin: "0rem"
             }}>
-                {season ? `Season ${season} Episode ${episodeNumber}` : `Episode: ${episodeNumber}`}
+                {season ? `Season ${season} Episode ${episodeNumber}` : `Episode no: ${episodeNumber}`}
             </p>
             <p style={{
                 margin: "0",
