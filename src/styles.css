@@ -1,0 +1,14 @@
+.songs-entry {
+  border: 2px solid saddlebrown;
+  padding: 0.5rem;
+}
+
+.songs-entry a {
+  display: block;
+  color: rgb(0, 68, 255);
+  font-style: italic;
+}
+
+.podcasts-entry {
+  border: 2px solid royalblue;
+}
