@@ -5,7 +5,7 @@ const Podcast = ({ season, episodeNumber, episodeName }) => {
             padding: "0.5rem"
         }}>
             <p style={{
-                margin: "0"
+                margin: "0rem"
             }}>
                 {season ? `Season ${season} Episode ${episodeNumber}` : `Episode: ${episodeNumber}`}
             </p>
