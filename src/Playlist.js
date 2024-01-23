@@ -76,7 +76,7 @@ export default function Playlist() {
 
     //Front-end
     return (
-        <>
+        <div>
             <h1>Songs & Podcasts</h1>
             <div>
                 <h2>Shuffled Songs Playlist for you</h2>
@@ -92,7 +92,7 @@ export default function Playlist() {
                 )
                 )}
             </div>
-        </>
+        </div>
     )
 }
 
