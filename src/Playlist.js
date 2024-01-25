@@ -67,6 +67,7 @@ export default function Playlist() {
     //     setShuffledPodcasts(shuffledPodcasts)
     // }, [songData, podcastData])
 
+
     const shuffleArray = (array) => {
         const shuffledArray = [...array];
         for (let i = shuffledArray.length - 1; i > 0; i--) {
