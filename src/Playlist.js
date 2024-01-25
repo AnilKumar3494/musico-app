@@ -10,7 +10,7 @@ export default function Playlist() {
 
     //Songs Data and info
     const songData = useMemo(() => {
-        //Just to show that data can be fetched and used - scalable 
+        //Just to show that data can be fetched and used - making it scalable if needed 
         const artistNames = ["Avicii"]
         return ([
             {
@@ -39,13 +39,10 @@ export default function Playlist() {
 
     //Podcasts Data and info
     const podcastData = useMemo(() => [
-
         { season: 1, episodeNumber: 1, episodeName: "The One Where It All Began" },
         { episodeNumber: 2, episodeName: "The One With Sonogram at the End" },
-        { episodeNumber: 3, episodeName: "The One With the Thumb" },
+        { season: 1, episodeNumber: 3, episodeName: "The One With the Thumb" },
         { episodeNumber: 4, episodeName: "The One With Geroge Stephanopoulos" },
-
-
     ], [])
 
     // const shuffleArray = (array) => {
@@ -66,8 +63,10 @@ export default function Playlist() {
     //     setShuffledSongs(shuffledSongs)
     //     setShuffledPodcasts(shuffledPodcasts)
     // }, [songData, podcastData])
+    //
 
 
+    /*Logic used for shuffling*/
     const shuffleArray = (array) => {
         const shuffledArray = [...array];
         for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -77,6 +76,7 @@ export default function Playlist() {
         return shuffledArray;
     };
 
+    //To do the shuffle only when rendered - if not for this shuffling keeps on hapenning!!
     useEffect(() => {
         const shuffledSongs = shuffleArray(songData);
         const shuffledPodcasts = shuffleArray(podcastData);
@@ -85,7 +85,7 @@ export default function Playlist() {
         setShuffledPodcasts(shuffledPodcasts);
     }, [songData, podcastData]);
 
-    //Front-end
+    //Front-end - user can see this
     return (
         <div>
             <h1>Songs & Podcasts</h1>

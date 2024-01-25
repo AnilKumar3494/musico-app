@@ -11,7 +11,7 @@ const Song = ({ songTitle, artistName, year, songLink, artistLink }) => {
 
                 <p style={{
                     margin: "0",
-                }}>Date: {year}</p>
+                }}>{`Date: ${year}`}</p>
             </div>
         </div>
 
