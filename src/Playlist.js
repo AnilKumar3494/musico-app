@@ -24,6 +24,7 @@ export default function Playlist() {
                 songLink: "https://www.youtube.com/embed/LjhCEhWiKXk?si=takZmbk-0RbQEwdz",
                 artistLink: "https://en.wikipedia.org/wiki/Bruno_Mars"
             },
+
             {
                 songTitle: "Perfect", artistName: "Ed Sheeran", year: 'Nov 9, 2017',
                 songLink: "https://www.youtube.com/embed/2Vv-BfVoq4g?si=VyOPgKfNitXRaKqT",
@@ -33,50 +34,45 @@ export default function Playlist() {
                 songTitle: "Waiting for Love", artistName: artistNames[0], year: '2015',
                 songLink: "https://www.youtube.com/embed/cHHLHGNpCSA?si=nR7vGe-j8q2UdceV",
                 artistLink: "https://en.wikipedia.org/wiki/Avicii"
-            },
-        ])
-    }, []
-    )
+            }
+        ]
+        )
+    }, [])
 
     //Podcasts Data and info
+    const introductionEpisode = {
+        season: 1,
+        episodeNumber: 1,
+        episodeName: "Introduction",
+        episodeLink: "https://embed.music.apple.com/in/album/introduction/359236365?i=359236431"
+    };
+
+    const thomasMetzingerEpisode = {
+        episodeNumber: 2,
+        episodeName: "Thomas Metzinger",
+        episodeLink: "https://embed.music.apple.com/in/album/thomas-metzinger-phd-introduces-himself/359236365?i=359236433"
+    };
+
+    const problemOfConsciousnessEpisode = {
+        season: 1,
+        episodeNumber: 3,
+        episodeName: "The Problem(s) of Consciousness",
+        episodeLink: "https://embed.music.apple.com/in/album/the-problem-s-of-consciousness/359236365?i=359236434"
+    };
+
+    const subjectiveConsciousnessEpisode = {
+        episodeNumber: 4,
+        episodeName: "Why is Consciousness Subjective",
+        episodeLink: "https://embed.music.apple.com/in/album/why-is-consciousness-subjective/359236365?i=359236415"
+    };
+
+    // Combine individual episodes into an array
     const podcastData = useMemo(() => [
-        {
-            season: 1, episodeNumber: 1, episodeName: "Introduction",
-            episodeLink: "https://embed.music.apple.com/in/album/introduction/359236365?i=359236431"
-        },
-        {
-            episodeNumber: 2, episodeName: "Thomas Metzinger",
-            episodeLink: "https://embed.music.apple.com/in/album/thomas-metzinger-phd-introduces-himself/359236365?i=359236433"
-        },
-        {
-            season: 1, episodeNumber: 3, episodeName: "The Problem(s) of Consciosness",
-            episodeLink: "https://embed.music.apple.com/in/album/the-problem-s-of-consciousness/359236365?i=359236434"
-        },
-        {
-            episodeNumber: 4, episodeName: "Why is Consciousness Subjecive",
-            episodeLink: "https://embed.music.apple.com/in/album/why-is-consciousness-subjective/359236365?i=359236415"
-        }
-    ], [])
-
-    // const shuffleArray = (array) => {
-    //     const shuffledArray = [...array]
-
-    //     for (let i = shuffledArray.length - 1; i > 0; i--) {
-    //         const j = Math.floor(Math.random() * (i + 1))
-    //         [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]]
-    //     }
-
-    //     return shuffledArray
-    // }
-
-    // useEffect(() => {
-    //     const shuffledSongs = shuffleArray(songData)
-    //     const shuffledPodcasts = shuffleArray(podcastData)
-
-    //     setShuffledSongs(shuffledSongs)
-    //     setShuffledPodcasts(shuffledPodcasts)
-    // }, [songData, podcastData])
-    //
+        introductionEpisode,
+        thomasMetzingerEpisode,
+        problemOfConsciousnessEpisode,
+        subjectiveConsciousnessEpisode
+    ], []);
 
 
     /*Logic used for shuffling*/
@@ -89,7 +85,7 @@ export default function Playlist() {
         return shuffledArray;
     };
 
-    //To do the shuffle only when rendered - if not for this shuffling keeps on hapenning!!
+    //To do the shuffle only when rendered - if not for this, the shuffling keeps on hapenning!!
     useEffect(() => {
         const shuffledSongs = shuffleArray(songData);
         const shuffledPodcasts = shuffleArray(podcastData);
@@ -107,12 +103,12 @@ export default function Playlist() {
     return (
         <div>
             <div>
-                <h1>Songs & Podcasts</h1>
-                <button onClick={redloadHandle} >Shuffle</button>
+                <h1>Musico - Songs & Podcasts</h1>
+                <button onClick={redloadHandle} >Give it a Whirl</button>
             </div>
 
             <div>
-                <h2>Shuffled Songs Playlist for you</h2>
+                <h2>Songs for you</h2>
                 <div className='songs_box'>
                     {shuffledSongs.map((song, index) => (
                         <Song key={index} {...song} />

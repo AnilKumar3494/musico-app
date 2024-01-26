@@ -35,12 +35,26 @@ a {
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.3rem;
   border-radius: 0.4rem;
   outline: none;
   border: none;
   font-weight: bold;
+  font-size: 1.3rem;
+
+  color: white;
+  background-image: url(musicbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   transition: all 0.2s linear;
   cursor: pointer;
+
+  margin-bottom: 2.5rem;
+}
+
+button:hover {
+  scale: 1.1;
+  background-position: bottom;
 }
