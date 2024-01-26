@@ -1,10 +1,8 @@
 const Song = ({ songTitle, artistName, year, songLink, artistLink }) => {
     return (
         <div className="songs-entry">
-            <div >
-                <a href={songLink}
-                    target="_blank"
-                >Song Name: {songTitle}</a>
+            <div className="song">
+                <iframe width="560" height="315" src={songLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                 <a href={artistLink}
                     target="_blank">Sung By: {artistName}</a>

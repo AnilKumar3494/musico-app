@@ -1,6 +1,13 @@
+h2 {
+  margin: 0;
+}
+
 .songs-entry {
-  border: 2px solid saddlebrown;
+  border-bottom: 2px solid saddlebrown;
   padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .songs-entry a {
@@ -10,5 +17,15 @@
 }
 
 .podcasts-entry {
-  border: 2px solid royalblue;
+  border-bottom: 2px solid royalblue;
+}
+
+.songs_box,
+.podcast_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.podcast_section {
+  margin-top: 4rem;
 }

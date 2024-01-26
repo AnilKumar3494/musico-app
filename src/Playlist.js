@@ -13,24 +13,25 @@ export default function Playlist() {
         //Just to show that data can be fetched and used - making it scalable if needed 
         const artistNames = ["Avicii"]
         return ([
+
             {
                 songTitle: "My Way", artistName: "Frank Sinatra", year: 1969,
-                songLink: "https://www.youtube.com/watch?v=qQzdAsjWGPg&pp=ygUFbXl3YXk%3D",
+                songLink: "https://www.youtube.com/embed/qQzdAsjWGPg?si=8BlxHYxR0mXgbt4n",
                 artistLink: "https://en.wikipedia.org/wiki/Frank_Sinatra"
             },
             {
                 songTitle: "Just the way you are", artistName: "Burno Mars", year: 'Sep 8, 2010',
-                songLink: "https://www.youtube.com/watch?v=LjhCEhWiKXk&pp=ygUUanVzdCB0aGUgd2F5IHlvdSBhcmU%3D",
+                songLink: "https://www.youtube.com/embed/LjhCEhWiKXk?si=takZmbk-0RbQEwdz",
                 artistLink: "https://en.wikipedia.org/wiki/Bruno_Mars"
             },
             {
                 songTitle: "Perfect", artistName: "Ed Sheeran", year: 'Nov 9, 2017',
-                songLink: "https://www.youtube.com/watch?v=2Vv-BfVoq4g&pp=ygUTcGVyZmVjdCBlZCBzaGVlcmFuIA%3D%3D",
+                songLink: "https://www.youtube.com/embed/2Vv-BfVoq4g?si=VyOPgKfNitXRaKqT",
                 artistLink: "https://en.wikipedia.org/wiki/Ed_Sheeran"
             },
             {
                 songTitle: "Waiting for Love", artistName: artistNames[0], year: '2015',
-                songLink: "https://music.apple.com/in/album/waiting-for-love/1440834059?i=1440834312",
+                songLink: "https://www.youtube.com/embed/cHHLHGNpCSA?si=nR7vGe-j8q2UdceV",
                 artistLink: "https://en.wikipedia.org/wiki/Avicii"
             },
         ])
@@ -39,10 +40,22 @@ export default function Playlist() {
 
     //Podcasts Data and info
     const podcastData = useMemo(() => [
-        { season: 1, episodeNumber: 1, episodeName: "The One Where It All Began" },
-        { episodeNumber: 2, episodeName: "The One With Sonogram at the End" },
-        { season: 1, episodeNumber: 3, episodeName: "The One With the Thumb" },
-        { episodeNumber: 4, episodeName: "The One With Geroge Stephanopoulos" },
+        {
+            season: 1, episodeNumber: 1, episodeName: "Introduction",
+            episodeLink: "https://embed.music.apple.com/in/album/introduction/359236365?i=359236431"
+        },
+        {
+            episodeNumber: 2, episodeName: "Thomas Metzinger",
+            episodeLink: "https://embed.music.apple.com/in/album/thomas-metzinger-phd-introduces-himself/359236365?i=359236433"
+        },
+        {
+            season: 1, episodeNumber: 3, episodeName: "The Problem(s) of Consciosness",
+            episodeLink: "https://embed.music.apple.com/in/album/the-problem-s-of-consciousness/359236365?i=359236434"
+        },
+        {
+            episodeNumber: 4, episodeName: "Why is Consciousness Subjecive",
+            episodeLink: "https://embed.music.apple.com/in/album/why-is-consciousness-subjective/359236365?i=359236415"
+        }
     ], [])
 
     // const shuffleArray = (array) => {
@@ -91,17 +104,21 @@ export default function Playlist() {
             <h1>Songs & Podcasts</h1>
             <div>
                 <h2>Shuffled Songs Playlist for you</h2>
-                {shuffledSongs.map((song, index) => (
-                    <Song key={index} {...song} />
-                )
-                )}
+                <div className='songs_box'>
+                    {shuffledSongs.map((song, index) => (
+                        <Song key={index} {...song} />
+                    )
+                    )}
+                </div>
             </div>
-            <div>
+            <div className='podcast_section'>
                 <h2>Shuffled Podcasts for you</h2>
-                {shuffledPodcasts.map((podcast, index) => (
-                    <Podcast key={index} {...podcast} />
-                )
-                )}
+                <div className='podcast_box'>
+                    {shuffledPodcasts.map((podcast, index) => (
+                        <Podcast key={index} {...podcast} />
+                    )
+                    )}
+                </div>
             </div>
         </div>
     )
@@ -109,57 +126,3 @@ export default function Playlist() {
 
 
 
-
-// const [playlist, setPlaylist] = useState([])
-
-// useEffect(() => {
-
-//     //Songs Data and info
-//     const songData = [
-//         { songTitle: "My Way", artistName: "Frank Sinatra", year: 2022 },
-//         { songTitle: "Just the way you are", artistName: "Burno Mars", year: 2023 },
-//         { songTitle: "perfect", artistName: "Ed Sheeran", year: 2023 },
-//     ]
-
-//     //Podcasts Data and info
-//     const podcastData = [
-//         {
-//             episodeNumber: 2, episodeName: "The One With Sonogram at the End",
-//             episodeNumber: 1, episodeName: "The One Where It ALl Began",
-//             episodeNumber: 3, episodeName: "The One With the Thumb",
-//         }
-//     ]
-
-//     const combinedPlaylist = [...songData, ...podcastData];
-//     const shuffledPlaylist = shuffleArray(combinedPlaylist);
-
-//     setPlaylist(shuffledPlaylist);
-// }, []);
-
-// // Function to shuffle the array
-// const shuffleArray = (array) => {
-//     const shuffledArray = [...array];
-//     for (let i = shuffledArray.length - 1; i > 0; i--) {
-//         const j = Math.floor(Math.random() * (i + 1));
-//         [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-//     }
-//     return shuffledArray;
-// };
-
-/* <>
-<h1>Playlist</h1>
-<div>
-    <h2>Shuffled Playlist for you</h2>
-    {playlist.map((item, index) => (
-        <div key={index}>
-            {item.hasOwnProperty('title') ? (
-                <Song title={item.title} artistName={item.artistName} year={item.year} />) : (<Podcast
-                    season={item.season}
-                    episodeNumber={item.episodeNumber}
-                    episodeName={item.episodeName}
-                />)
-            }
-        </div>
-    ))}
-</div>
-</> */
