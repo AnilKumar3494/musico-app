@@ -2,6 +2,10 @@ h2 {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 .songs-entry {
   border-bottom: 2px solid saddlebrown;
   padding: 0.5rem;
@@ -28,4 +32,15 @@ h2 {
 
 .podcast_section {
   margin-top: 4rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+
+  transition: all 0.2s linear;
+  cursor: pointer;
 }

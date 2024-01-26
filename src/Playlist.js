@@ -98,10 +98,19 @@ export default function Playlist() {
         setShuffledPodcasts(shuffledPodcasts);
     }, [songData, podcastData]);
 
+    //Page Reloader - Shuffle
+    const redloadHandle = () => {
+        window.location.reload()
+    }
+
     //Front-end - user can see this
     return (
         <div>
-            <h1>Songs & Podcasts</h1>
+            <div>
+                <h1>Songs & Podcasts</h1>
+                <button onClick={redloadHandle} >Shuffle</button>
+            </div>
+
             <div>
                 <h2>Shuffled Songs Playlist for you</h2>
                 <div className='songs_box'>
