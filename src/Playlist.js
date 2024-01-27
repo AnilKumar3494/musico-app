@@ -49,16 +49,17 @@ export default function Playlist() {
 
     const thomasMetzingerEpisode = {
         episodeNumber: 2,
-        episodeName: "Thomas Metzinger",
-        episodeLink: "https://embed.music.apple.com/in/album/thomas-metzinger-phd-introduces-himself/359236365?i=359236433"
+        episodeName: "It Is Never Too Late",
+        episodeLink: "https://embed.music.apple.com/in/album/it-is-never-too-late-come-to-our-youtube/1635241701?i=1635241702"
     };
 
     const problemOfConsciousnessEpisode = {
         season: 1,
-        episodeNumber: 3,
-        episodeName: "The Problem(s) of Consciousness",
-        episodeLink: "https://embed.music.apple.com/in/album/the-problem-s-of-consciousness/359236365?i=359236434"
+        episodeNumber: 301,
+        episodeName: "Tripping",
+        episodeLink: "https://embed.music.apple.com/in/album/episode-301-tipping-feat-patton-oswalt/1050870322?i=1050870325"
     };
+
 
     const subjectiveConsciousnessEpisode = {
         episodeNumber: 4,

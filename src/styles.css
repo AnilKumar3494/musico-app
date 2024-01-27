@@ -44,11 +44,12 @@ button {
 
   color: white;
   background-image: url(musicbg.jpg);
-  background-position: center;
+  background-image: url(https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?w=1800&t=st=1706313164~exp=1706313764~hmac=7994dc3c5e4c0d6f45135c5b350be3cecb8e58d463f0e8bc5c2d70cbf6c44805);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 
-  transition: all 0.2s linear;
+  transition: all 0.35s linear;
   cursor: pointer;
 
   margin-bottom: 2.5rem;
@@ -56,5 +57,7 @@ button {
 
 button:hover {
   scale: 1.1;
+  outline: none;
+  border: none;
   background-position: bottom;
 }
