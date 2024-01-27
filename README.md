@@ -69,11 +69,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-###My Progress
-From ->
+### My Progress
+
+#### From ->
+
 ![Alt text](initialImage.png)
 
-To -> Current Progress
+#### To -> Current Progress
 
 firstHalf - ![Alt text](currentImages1.png)
 secondHalf - ![Alt text](currentImages2.png)
+
+Future scope making it more scalabe, better reponsiveness and add more features
