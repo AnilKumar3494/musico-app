@@ -13,7 +13,6 @@ export default function Playlist() {
         //Just to show that data can be fetched and used - making it scalable if needed 
         const artistNames = ["Avicii"]
         return ([
-
             {
                 songTitle: "My Way", artistName: "Frank Sinatra", year: 1969,
                 songLink: "https://www.youtube.com/embed/qQzdAsjWGPg?si=8BlxHYxR0mXgbt4n",
