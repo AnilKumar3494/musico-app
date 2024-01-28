@@ -1,3 +1,7 @@
+h1 {
+  font-size: 2.5rem;
+}
+
 h2 {
   margin: 0;
 }
@@ -15,8 +19,9 @@ a {
 
 .songs-entry a {
   display: block;
-  color: rgb(0, 68, 255);
+  color: rgb(91, 127, 226);
   font-style: italic;
+  font-size: 1.2rem;
 }
 
 .songs_box,
@@ -31,12 +36,12 @@ a {
 }
 
 button {
-  padding: 0.7rem 1.3rem;
-  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
   outline: none;
   border: none;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
   color: white;
 
@@ -46,7 +51,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 
-  transition: all 0.35s linear;
+  transition: all 0.3s linear;
   cursor: pointer;
 
   margin-bottom: 2.5rem;
@@ -57,4 +62,12 @@ button:hover {
   outline: none;
   border: none;
   background-position: bottom;
+}
+
+iframe {
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+
+  aspect-ratio: 16 / 9;
 }
