@@ -80,4 +80,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 firstHalf - ![Alt text](currentImages1.png)
 secondHalf - ![Alt text](currentImages2.png)
 
-Future scope making it more scalabe, better reponsiveness and add more features
+## Future scope
+
+(i) Making it more scalabe - it can iterate through wide range of songs and podcasts to display shuffled songs.
+(ii) better reponsiveness for small, large and mobile deivces
+(iii) Add more features - like user login, user can upload their favirote songs and we will shuffle them and play them
