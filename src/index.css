@@ -17,6 +17,8 @@ body {
   background-size: cover;
 
   line-height: 1.4;
+
+  min-height: 100vh;
 }
 
 code {
