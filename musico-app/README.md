@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with the music-o app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### My Progress
+
+#### From ->
+
+![Alt text](initialImage.png)
+
+#### To -> Current Progress
+
+firstHalf - ![Alt text](currentImages1.png)
+secondHalf - ![Alt text](currentImages2.png)
+
+## Future scope
+
+(i) Making it more scalabe - it can iterate through wide range of songs and podcasts to display shuffled songs.
+(ii) better reponsiveness for small, large and mobile deivces
+(iii) Add more features - like user login, user can upload their favirote songs and we will shuffle them and play them

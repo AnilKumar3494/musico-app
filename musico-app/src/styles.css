@@ -1,14 +1,73 @@
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
 .songs-entry {
-  border: 2px solid saddlebrown;
   padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .songs-entry a {
   display: block;
-  color: rgb(0, 68, 255);
+  color: rgb(91, 127, 226);
   font-style: italic;
+  font-size: 1.2rem;
 }
 
-.podcasts-entry {
-  border: 2px solid royalblue;
+.songs_box,
+.podcast_box {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid royalblue;
+}
+
+.podcast_section {
+  margin-top: 4rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  color: white;
+
+  background-image: url(https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?w=1800&t=st=1706313164~exp=1706313764~hmac=7994dc3c5e4c0d6f45135c5b350be3cecb8e58d463f0e8bc5c2d70cbf6c44805);
+  background-image: url(musicbg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+  margin-bottom: 2.5rem;
+}
+
+button:hover {
+  scale: 1.1;
+  outline: none;
+  border: none;
+  background-position: bottom;
+}
+
+iframe {
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+
+  aspect-ratio: 16 / 9;
 }
