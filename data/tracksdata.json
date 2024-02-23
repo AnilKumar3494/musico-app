@@ -1,0 +1,56 @@
+{
+  "songData": [
+    {
+      "songTitle": "My Way",
+      "artistName": "Frank Sinatra",
+      "year": 1969,
+      "songLink": "https://www.youtube.com/embed/qQzdAsjWGPg?si=8BlxHYxR0mXgbt4n",
+      "artistLink": "https://en.wikipedia.org/wiki/Frank_Sinatra"
+    },
+    {
+      "songTitle": "Just the way you are",
+      "artistName": "Burno Mars",
+      "year": "Sep 8, 2010",
+      "songLink": "https://www.youtube.com/embed/LjhCEhWiKXk?si=takZmbk-0RbQEwdz",
+      "artistLink": "https://en.wikipedia.org/wiki/Bruno_Mars"
+    },
+    {
+      "songTitle": "Perfect",
+      "artistName": "Ed Sheeran",
+      "year": "Nov 9, 2017",
+      "songLink": "https://www.youtube.com/embed/2Vv-BfVoq4g?si=VyOPgKfNitXRaKqT",
+      "artistLink": "https://en.wikipedia.org/wiki/Ed_Sheeran"
+    },
+    {
+      "songTitle": "Waiting for Love",
+      "artistName": "Avicii",
+      "year": "2015",
+      "songLink": "https://www.youtube.com/embed/cHHLHGNpCSA?si=nR7vGe-j8q2UdceV",
+      "artistLink": "https://en.wikipedia.org/wiki/Avicii"
+    }
+  ],
+  "podcastData": [
+    {
+      "season": 1,
+      "episodeNumber": 1,
+      "episodeName": "Introduction",
+      "episodeLink": "https://embed.music.apple.com/in/album/introduction/359236365?i=359236431"
+    },
+    {
+      "episodeNumber": 2,
+      "episodeName": "It Is Never Too Late",
+      "episodeLink": "https://embed.music.apple.com/in/album/it-is-never-too-late-come-to-our-youtube/1635241701?i=1635241702"
+    },
+    {
+      "season": 1,
+      "episodeNumber": 301,
+      "episodeName": "Tripping",
+      "episodeLink": "https://embed.music.apple.com/in/album/episode-301-tipping-feat-patton-oswalt/1050870322?i=1050870325"
+    },
+    {
+      "episodeNumber": 4,
+      "episodeName": "Why is Consciousness Subjective",
+      "episodeLink": "https://embed.music.apple.com/in/album/why-is-consciousness-subjective/359236365?i=359236415"
+    }
+  ]
+}
